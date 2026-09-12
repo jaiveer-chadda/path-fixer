@@ -18,6 +18,8 @@ function fix-path-cap10n() {
 
 # ——————————————————————————————————————————————————————————————————————————— #
 
+autoload -Uz add-zsh-hook
+
 # remove the function from `$chpwd_functions` if it exists there
 add-zsh-hook -d chpwd fix-path-cap10n
 # then add it back, at the beginning of the array
